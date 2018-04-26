@@ -1,0 +1,19 @@
+.App{
+text-align: center;
+  font-size: 25px;
+}
+
+.clock{
+margin-top: 20px;
+  display:flex;
+  margin-bottom: 30px;
+}
+
+.clock-days, .clock-hours, .clock-minutes, .clock-seconds{
+  flex:1;
+  border: 1px solid gray;
+}
+
+.date{
+  font-size: 1.3em;
+}
