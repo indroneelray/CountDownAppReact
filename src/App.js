@@ -22,11 +22,11 @@ changeDeadline(){
       <Heading />
       <div>
       <div className="date">{this.state.deadline}</div>
-      <Clock />
+      <Clock deadLine={this.state.deadline} />
       </div>
       <div>
       <input
-      onChange={event=>this.setState({newDeadline:event.target.value})} placeholder="new date"/>
+      onChange={event=>this.setState({newDeadline:event.target.value})} placeholder="dd month yyyy"/>
       <button onClick={()=>this.changeDeadline()}>Submit</button>
       </div>
     </div>);

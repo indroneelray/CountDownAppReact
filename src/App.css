@@ -17,3 +17,30 @@ margin-top: 20px;
 .date{
   font-size: 1.3em;
 }
+
+.heading{
+  background-color: #0abde3;
+}
+ div{
+  background-color: #feca57;
+}
+
+.clock > div:hover{
+  transform: scale(1.10);
+  transition: all 0.5s ease-in-out;
+  animation-name: 'font-change';
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes font-change {
+
+  0% {color:black}
+    20% {color:purple}
+      40% {color:orange}
+        60% {color:green}
+          80% {color:violet}
+            100% {color:black}
+
+}
