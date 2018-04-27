@@ -36,7 +36,7 @@ changeTimer(){
       onChange={event=>this.setState({newDeadline:event.target.value})} placeholder="dd month yyyy" />
       <button onClick={()=>this.changeDeadline()}>Submit</button>
       </div>
-      <Stopwatch timer={this.state.timer}/>
+      <Stopwatch timer={this.state.timer} />
       <input
       onChange={event=>this.setState({newTimer:event.target.value})} placeholder="Enter in seconds" />
       <button onClick={()=>this.changeTimer()}>Submit</button>
