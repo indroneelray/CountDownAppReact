@@ -34,12 +34,9 @@ getTimeUntil(date){
 }
 
 leading0(number){
-  if(number){
-     return number>10?number:'0'+number;
-  }
-  else {
-    return 'error';
-  }
+
+     return number>=10?number:'0'+number;
+
 }
 
 componentWillMount(){
