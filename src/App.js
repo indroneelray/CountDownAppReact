@@ -11,8 +11,8 @@ constructor(props){
   this.state={
     deadline:'',
     newDeadline:'',
-    timer:100,
-    newTimer:0
+    timerNumber:null,
+    newTimer:null
   }
 }
 
@@ -21,7 +21,7 @@ changeDeadline(){
 }
 
 changeTimer(){
-  this.setState({timer:this.state.newTimer})
+  this.setState({timerNumber:this.state.newTimer})
 }
 
     render(){
@@ -36,7 +36,8 @@ changeTimer(){
       onChange={event=>this.setState({newDeadline:event.target.value})} placeholder="dd month yyyy" />
       <button onClick={()=>this.changeDeadline()}>Submit</button>
       </div>
-      <Stopwatch timer={this.state.timer} />
+      <div className="timer-display">{this.state.timerNumber}</div>
+      <Stopwatch timer={this.state.timerNumber} />
       <input
       onChange={event=>this.setState({newTimer:event.target.value})} placeholder="Enter in seconds" />
       <button onClick={()=>this.changeTimer()}>Submit</button>
